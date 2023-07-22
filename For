@@ -1,0 +1,14 @@
+// Este es un ejercicio de for
+let arreglo = [3, 4, 5, 6, 7, 8]
+let resultados = [27, 36, 45, 54, 63, 72]
+let multiplo = 0
+
+// Aquí se crea un for dentro de otro y funcionan así:
+// El primer for: mientras 'i' (que inicia con valor cero) sea menor al total de elementos dentro del arreglo, 'i' aumentará en 1. y se ejecutara en cada iteración el segundo for.
+// El segundo for: mientras 'multiplo' sea menor que el valor del item en el que se encuentra iterando 'i' dentro del arreglo resultados 'n' aumentará en 1 ()
+for (let i = 0; i < arreglo.length; i++) {
+  for (let n = 0; multiplo < resultados[i]; n++){
+    multiplo = n * arreglo[i]
+    console.log(multiplo)
+  }
+}
